@@ -8,7 +8,6 @@
     vimAlias = true;
     vimdiffAlias = true;
     sideloadInitLua = true;
-    extraPackages = [ pkgs.git ];
     plugins = with pkgs.vimPlugins; [
       blink-cmp
       conform-nvim

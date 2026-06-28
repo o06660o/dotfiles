@@ -8,7 +8,9 @@
     ripgrep
   ];
   imports = [
+    ./fish
     ./lang
     ./nvim
+    ./yazi
   ];
 }
