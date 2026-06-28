@@ -1,13 +1,23 @@
-## Installed Packages
+## Packages Installed by `dnf`
 
-- JetbrainsMono Nerd Font.
+- `keyd` (copr).
 - `clash-verge-rev`.
 - `fcitx5`, `fcitx5-configtool`, `fcitx5-chinese-addons`.
 - `kitty`.
-- `codex`.
-- Determinate Nix.
+- `flatpak`.
 
-## Making `fish` Default Shell
+## Packages Installed by `flatpak`
+
+- `com.qq.QQ`.
+- `com.tencent.WeChat`.
+
+## Packages Installed Manually
+
+- JetbrainsMono Nerd Font.
+- Determinate Nix.
+- `codex`.
+
+## Making `fish` the Default Shell
 
 ```bash
 shell=$(command -v fish)

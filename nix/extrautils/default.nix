@@ -5,6 +5,7 @@
     btop
     cloc
     dust
+    fastfetch
     ripgrep
   ];
   imports = [
