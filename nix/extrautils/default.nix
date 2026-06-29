@@ -7,6 +7,7 @@
     dust
     fastfetch
     ripgrep
+    tree-sitter
   ];
   imports = [
     ./fish

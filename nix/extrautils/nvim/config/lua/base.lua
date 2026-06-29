@@ -7,13 +7,14 @@ vim.opt.mouse = "a"
 vim.opt.number = true
 vim.opt.shiftround = true
 vim.opt.shiftwidth = 2
-vim.opt.softtabstop = 2
+vim.opt.softtabstop = -1
 vim.opt.splitright = true
 vim.opt.textwidth = 100
 vim.opt.undofile = true
 vim.opt.wrap = false
 
 -- Keymap
+vim.keymap.set("n", "<C-s>", ":w<CR>")
 vim.keymap.set("n", "<C-LeftMouse>", "")
 
 -- Autocmd
@@ -48,3 +49,6 @@ vim.diagnostic.config({ signs = false })
 vim.keymap.set("n", "<Space>d", function()
   vim.diagnostic.open_float()
 end)
+
+-- NOTE: We treat `.h` file as C header instead of C++ header.
+vim.filetype.add({ extension = { h = "c" } })

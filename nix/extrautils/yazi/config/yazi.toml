@@ -10,4 +10,4 @@ image_filter = "lanczos3"
 image_quality = 90
 
 [plugin]
-prepend_previewers = [ { mime = "application/{json,ndjson}", run = "code" } ]
+prepend_previewers = [{ mime = "application/{json,ndjson}", run = "code" }]

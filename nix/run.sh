@@ -13,14 +13,14 @@ rebuild() {
 }
 
 case "${1:-}" in
-  update)
-    update
-    ;;
-  rebuild)
-    rebuild
-    ;;
-  *)
-    echo "Usage: $0 [update|rebuild]" >&2
-    exit 1
-    ;;
+update)
+  update
+  ;;
+rebuild)
+  rebuild
+  ;;
+*)
+  echo "Usage: $0 [update|rebuild]" >&2
+  exit 1
+  ;;
 esac
