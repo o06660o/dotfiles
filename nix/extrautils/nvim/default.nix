@@ -13,7 +13,9 @@
       conform-nvim
       nvim-autopairs
       nvim-lspconfig
+      nvim-tree-lua
       nvim-treesitter.withAllGrammars
+      nvim-web-devicons
       tokyonight-nvim
       vim-lastplace
     ];

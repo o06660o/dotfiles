@@ -1,5 +1,4 @@
 -- Options
-vim.opt.autochdir = true
 vim.opt.clipboard = "unnamedplus"
 vim.opt.expandtab = true
 vim.opt.list = true
@@ -9,6 +8,7 @@ vim.opt.shiftround = true
 vim.opt.shiftwidth = 2
 vim.opt.softtabstop = -1
 vim.opt.splitright = true
+vim.opt.termguicolors = true
 vim.opt.textwidth = 100
 vim.opt.undofile = true
 vim.opt.wrap = false
@@ -16,6 +16,7 @@ vim.opt.wrap = false
 -- Keymap
 vim.keymap.set("n", "<C-s>", ":w<CR>")
 vim.keymap.set("n", "<C-LeftMouse>", "")
+vim.keymap.set("n", "<Space>v", ":vertical terminal<CR>")
 
 -- Autocmd
 vim.api.nvim_create_autocmd("FileType", {
@@ -27,6 +28,9 @@ vim.api.nvim_create_autocmd("FileType", {
 
 -- Builtin Terminal
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
+vim.keymap.set("t", "<C-Esc>", function()
+  vim.api.nvim_chan_send(vim.b.terminal_job_id, "\027")
+end)
 vim.keymap.set("t", "<C-w>h", "<C-\\><C-n><C-w>h")
 vim.keymap.set("t", "<C-w>j", "<C-\\><C-n><C-w>j")
 vim.keymap.set("t", "<C-w>k", "<C-\\><C-n><C-w>k")
