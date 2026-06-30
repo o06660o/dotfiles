@@ -8,6 +8,8 @@ require("conform").setup({
   notify_on_error = true,
 })
 
+require("gitsigns").setup({})
+
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 require("nvim-tree").setup({

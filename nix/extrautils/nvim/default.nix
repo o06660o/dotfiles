@@ -11,6 +11,7 @@
     plugins = with pkgs.vimPlugins; [
       blink-cmp
       conform-nvim
+      gitsigns-nvim
       nvim-autopairs
       nvim-lspconfig
       nvim-tree-lua
