@@ -44,7 +44,38 @@ vim.api.nvim_create_autocmd("TermOpen", {
 vim.api.nvim_create_autocmd({ "TermOpen", "WinEnter" }, {
   pattern = "term://*",
   callback = function()
+    if vim.w.terminal_view then
+      vim.fn.winrestview(vim.w.terminal_view)
+    end
     vim.cmd("startinsert")
+  end,
+})
+vim.api.nvim_create_autocmd({ "TermLeave", "WinLeave" }, {
+  pattern = "term://*",
+  callback = function()
+    vim.w.terminal_view = vim.fn.winsaveview()
+  end,
+})
+local terminal_resize_pending = false
+vim.api.nvim_create_autocmd({ "VimResized", "WinResized" }, {
+  pattern = "*",
+  callback = function()
+    if terminal_resize_pending then
+      return
+    end
+    terminal_resize_pending = true
+    vim.schedule(function()
+      terminal_resize_pending = false
+      for _, win in ipairs(vim.api.nvim_tabpage_list_wins(0)) do
+        local buf = vim.api.nvim_win_is_valid(win) and vim.api.nvim_win_get_buf(win)
+        if buf and vim.bo[buf].buftype == "terminal" then
+          vim.api.nvim_win_call(win, function()
+            vim.api.nvim_win_set_cursor(win, { vim.api.nvim_buf_line_count(buf), 0 })
+            vim.w.terminal_view = vim.fn.winsaveview()
+          end)
+        end
+      end
+    end)
   end,
 })
 
