@@ -3,6 +3,7 @@
 {
   imports = [
     ./c.nix
+    ./cmake.nix
     ./fish.nix
     ./json.nix
     ./lua.nix

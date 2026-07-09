@@ -5,6 +5,7 @@
 - `fcitx5`, `fcitx5-configtool`, `fcitx5-chinese-addons`.
 - `kitty`.
 - `flatpak`.
+- `libavcodec-freeworld` (fusion).
 
 ## Packages Installed by `flatpak`
 
@@ -50,4 +51,11 @@ flatpak override --user \
   --env=QT_QPA_PLATFORM=xcb \
   --filesystem=home \
   com.tencent.WeChat
+```
+
+### Configure `firefox`
+
+```bash
+sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install libavcodec-freeworld
 ```
