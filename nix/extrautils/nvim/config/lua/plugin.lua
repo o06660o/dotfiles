@@ -41,7 +41,7 @@ require("nvim-tree").setup({
     vim.keymap.set({ "n", "x" }, "c", api.fs.copy.filename, opts("Copy Name"))
     vim.keymap.set({ "n", "x" }, "C", api.fs.copy.absolute_path, opts("Copy Absolute Path"))
   end,
-  filters = { dotfiles = true },
+  filters = { dotfiles = true, git_ignored = false },
   actions = { open_file = { quit_on_open = true } },
   ui = { confirm = { default_yes = true } },
 })
