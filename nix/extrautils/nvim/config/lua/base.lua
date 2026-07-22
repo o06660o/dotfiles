@@ -32,4 +32,11 @@ vim.keymap.set("n", "<Space>d", function()
 end)
 
 -- NOTE: We treat `.h` file as C header instead of C++ header.
-vim.filetype.add({ extension = { h = "c" } })
+vim.filetype.add({
+  extension = {
+    h = "c",
+    mli = "ocamlinterface",
+    mll = "ocamllex",
+    mly = "menhir",
+  },
+})

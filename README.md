@@ -59,3 +59,9 @@ flatpak override --user \
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf install libavcodec-freeworld
 ```
+
+### Configure Determinate Nix
+
+```bash
+sudo echo "substituters = https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store https://cache.nixos.org/" >>/etc/nix/nix.custom.conf
+```

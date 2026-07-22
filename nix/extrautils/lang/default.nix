@@ -10,6 +10,7 @@
     ./make.nix
     ./markdown.nix
     ./nix.nix
+    ./ocaml.nix
     ./python.nix
     ./rust.nix
     ./sh.nix
