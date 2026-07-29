@@ -1,8 +1,11 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 
 {
   home.packages = with pkgs; [
+    clang
     clang-tools
-    gcc
+    (lib.hiPrio gcc)
+    llvm
+    ninja
   ];
 }

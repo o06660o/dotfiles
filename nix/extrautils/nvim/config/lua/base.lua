@@ -35,6 +35,7 @@ end)
 vim.filetype.add({
   extension = {
     h = "c",
+    ll = "llvm",
     mli = "ocamlinterface",
     mll = "ocamllex",
     mly = "menhir",
