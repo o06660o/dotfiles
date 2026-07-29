@@ -5,6 +5,7 @@
     clang
     clang-tools
     (lib.hiPrio gcc)
+    lld
     llvm
     ninja
   ];
