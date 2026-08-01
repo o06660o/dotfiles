@@ -6,6 +6,7 @@
     cloc
     dust
     fastfetch
+    helix
     ripgrep
     tree-sitter
   ];

@@ -5,6 +5,7 @@
     ./c.nix
     ./cmake.nix
     ./fish.nix
+    ./js.nix
     ./json.nix
     ./lua.nix
     ./make.nix
