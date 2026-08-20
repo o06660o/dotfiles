@@ -65,3 +65,15 @@ sudo dnf install libavcodec-freeworld
 ```bash
 sudo echo "substituters = https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store https://cache.nixos.org/" >>/etc/nix/nix.custom.conf
 ```
+
+### Make System Time Consistent between Windows and Linux
+
+```cmd
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation" /v RealTimeIsUniversal /t REG_DWORD /d 1 /f
+```
+
+```bash
+sudo timedatectl set-timezone Asia/Shanghai
+sudo timedatectl set-local-rtc 0 --adjust-system-clock
+sudo systemctl restart chronyd
+```
