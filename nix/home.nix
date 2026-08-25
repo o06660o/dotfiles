@@ -20,6 +20,7 @@
   xdg.configFile."mimeapps.list".force = true;
   imports = [
     ./extrautils
+    ./gui
     ./optutils
   ];
 }

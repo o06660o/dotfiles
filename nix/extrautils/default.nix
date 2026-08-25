@@ -16,9 +16,7 @@
   imports = [
     ./fish
     ./lang
-    ./mpv
     ./nvim
-    ./zathura
     ./yazi
   ];
 }
