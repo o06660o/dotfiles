@@ -18,6 +18,7 @@
     ./lang
     ./mpv
     ./nvim
+    ./zathura
     ./yazi
   ];
 }

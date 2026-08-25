@@ -14,7 +14,7 @@
 
 ## Packages Installed Manually
 
-- JetbrainsMono Nerd Font.
+- JetbrainsMono Nerd Font. (TODO: this can be managed by nix)
 - Determinate Nix.
 - `codex`.
 

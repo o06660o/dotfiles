@@ -16,6 +16,7 @@
     ./rust.nix
     ./sh.nix
     ./toml.nix
+    ./typst.nix
     ./yaml.nix
   ];
 }
