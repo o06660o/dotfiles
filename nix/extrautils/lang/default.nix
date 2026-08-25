@@ -13,6 +13,7 @@
     ./nix.nix
     ./ocaml.nix
     ./python.nix
+    ./ruby.nix
     ./rust.nix
     ./sh.nix
     ./toml.nix

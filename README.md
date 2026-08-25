@@ -3,7 +3,7 @@
 - `keyd` (copr).
 - `clash-verge-rev`.
 - `fcitx5`, `fcitx5-configtool`, `fcitx5-chinese-addons`.
-- `kitty`.
+- `kitty`. (TODO: make this managed by nix)
 - `flatpak`.
 - `libavcodec-freeworld` (fusion).
 
@@ -14,7 +14,7 @@
 
 ## Packages Installed Manually
 
-- JetbrainsMono Nerd Font. (TODO: this can be managed by nix)
+- JetbrainsMono Nerd Font. (TODO: make this managed by nix)
 - Determinate Nix.
 - `codex`.
 
