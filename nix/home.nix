@@ -7,11 +7,11 @@
     stateVersion = "26.05";
   };
   targets.genericLinux.enable = true;
-  fonts.fontconfig.enable = true;
   programs.home-manager.enable = true;
   imports = [
     ./devlibs
     ./extrautils
+    ./fonts.nix
     ./gui
     ./mimeapps.nix
     ./optutils
