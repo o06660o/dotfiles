@@ -8,7 +8,7 @@
     lld
     llvm
     meson
-    pkg-config
     ninja
+    pkgsStatic.stdenv.cc
   ];
 }

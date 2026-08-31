@@ -2,8 +2,6 @@
 
 {
   home.packages = with pkgs; [
-    OVMF
-    limine-full
-    qemu
+    nasm
   ];
 }

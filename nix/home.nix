@@ -10,6 +10,7 @@
   fonts.fontconfig.enable = true;
   programs.home-manager.enable = true;
   imports = [
+    ./devlibs
     ./extrautils
     ./gui
     ./mimeapps.nix

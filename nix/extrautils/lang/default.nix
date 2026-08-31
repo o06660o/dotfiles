@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./asm.nix
     ./c.nix
     ./cmake.nix
     ./fish.nix
