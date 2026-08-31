@@ -1,0 +1,57 @@
+{ lib, ... }:
+
+let
+  videoMimeTypes = [
+    "video/3gp"
+    "video/3gpp"
+    "video/3gpp2"
+    "video/avi"
+    "video/divx"
+    "video/dv"
+    "video/fli"
+    "video/flv"
+    "video/mkv"
+    "video/mp2t"
+    "video/mp4"
+    "video/mp4v-es"
+    "video/mpeg"
+    "video/msvideo"
+    "video/ogg"
+    "video/quicktime"
+    "video/vnd.avi"
+    "video/vnd.divx"
+    "video/vnd.mpegurl"
+    "video/vnd.rn-realvideo"
+    "video/webm"
+    "video/x-avi"
+    "video/x-flic"
+    "video/x-flc"
+    "video/x-flv"
+    "video/x-m4v"
+    "video/x-matroska"
+    "video/x-mpeg2"
+    "video/x-mpeg3"
+    "video/x-ms-afs"
+    "video/x-ms-asf"
+    "video/x-ms-wmv"
+    "video/x-ms-wmx"
+    "video/x-ms-wvxvideo"
+    "video/x-msvideo"
+    "video/x-ogm"
+    "video/x-ogm+ogg"
+    "video/x-theora"
+    "video/x-theora+ogg"
+  ];
+in
+{
+  xdg.mimeApps = {
+    enable = true;
+    defaultApplications = {
+      "application/pdf" = "org.pwmt.zathura-pdf-mupdf.desktop";
+      "x-scheme-handler/clash" = "clash-verge.desktop";
+      "x-scheme-handler/clash-verge" = "clash-verge.desktop";
+    } // lib.genAttrs videoMimeTypes (_: "mpv.desktop");
+  };
+
+  xdg.configFile."mimeapps.list".force = true;
+}

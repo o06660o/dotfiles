@@ -7,6 +7,8 @@
     (lib.hiPrio gcc)
     lld
     llvm
+    meson
+    pkg-config
     ninja
   ];
 }
