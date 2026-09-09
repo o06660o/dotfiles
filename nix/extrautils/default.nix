@@ -8,11 +8,13 @@
     btop
     cloc
     dust
+    e2tools
     fastfetch
     flex
     helix
     mediainfo
     mkvtoolnix-cli
+    nushell
     pahole
     patch
     qbittorrent
