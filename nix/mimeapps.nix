@@ -47,10 +47,12 @@ in
   xdg.mimeApps = {
     enable = true;
     defaultApplications = {
+      "application/x-cbz" = "org.pwmt.zathura-cb.desktop";
       "application/pdf" = "org.pwmt.zathura-pdf-mupdf.desktop";
       "x-scheme-handler/clash" = "clash-verge.desktop";
       "x-scheme-handler/clash-verge" = "clash-verge.desktop";
-    } // lib.genAttrs videoMimeTypes (_: "mpv.desktop");
+    }
+    // lib.genAttrs videoMimeTypes (_: "mpv.desktop");
   };
 
   xdg.configFile."mimeapps.list".force = true;
