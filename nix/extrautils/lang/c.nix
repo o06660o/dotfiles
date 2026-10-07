@@ -2,11 +2,11 @@
 
 {
   home.packages = with pkgs; [
-    clang
-    clang-tools
+    llvmPackages_22.clang
+    llvmPackages_22.clang-tools
     (lib.hiPrio gcc)
-    lld
-    llvm
+    llvmPackages_22.lld
+    llvmPackages_22.llvm
     meson
     ninja
     pkgsStatic.stdenv.cc

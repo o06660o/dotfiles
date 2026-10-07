@@ -11,6 +11,7 @@
     ./lua.nix
     ./make.nix
     ./markdown.nix
+    ./meson.nix
     ./nix.nix
     ./ocaml.nix
     ./python.nix
