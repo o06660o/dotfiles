@@ -14,7 +14,7 @@
 
 ## Packages Installed Manually
 
-- JetbrainsMono Nerd Font. (TODO: make this managed by nix)
+- JetbrainsMono Nerd Font & Sarasa Gothic. (TODO: make this managed by nix)
 - Determinate Nix.
 - `codex`.
 
