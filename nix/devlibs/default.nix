@@ -59,7 +59,6 @@ in
       ]
     }\${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}";
     LIBCLANG_PATH = "${pkgs.llvmPackages_22.libclang.lib}/lib";
-    # Let native linkers find libraries installed in the Home Manager profile.
     LIBRARY_PATH = "${config.home.profileDirectory}/lib:${
       pkgs.lib.makeLibraryPath [
         pkgs.llvmPackages.llvm

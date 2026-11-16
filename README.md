@@ -6,6 +6,7 @@
 - `kitty`. (TODO: make this managed by nix)
 - `flatpak`.
 - `libavcodec-freeworld` (fusion).
+- `moby-engie`.
 
 ## Packages Installed by `flatpak`
 
